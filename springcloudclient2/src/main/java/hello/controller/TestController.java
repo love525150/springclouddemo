@@ -20,6 +20,11 @@ public class TestController {
     @Autowired
     RestTemplate restTemplate;
 
+    @RequestMapping("name")
+    public String name() {
+        return "I'm service provider2";
+    }
+
     @RequestMapping("consume")
     public String consume() {
         List<ServiceInstance> instances = discoveryClient.getInstances("a-bootiful-client");

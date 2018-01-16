@@ -9,6 +9,6 @@ public class TestController {
 
     @RequestMapping("name")
     public String name() {
-        return "I'm service provider";
+        return "I'm service provider1";
     }
 }
